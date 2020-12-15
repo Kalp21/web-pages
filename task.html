@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+    <script>
+        var arr=[10, 10, 10 ,10 ,20, 30 ,30 ,30 ,30 ,30, 30 ,30 ,40, 40, 40, 40, 40 ];
+        var pair=0,count=0,i;
+        for(i=1;i<=arr.length;)
+        {
+            if (arr[i] == arr[i+1])
+            {
+                pair++;
+                i=i+2;
+            }
+            else{
+                i=i+1;
+            }
+        }document.write("pairs are:",pair);
+
+        
+    </script>
+    </body>
+</html>

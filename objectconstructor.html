@@ -1,0 +1,17 @@
+<html>
+    <head></head>
+    <title>user-defined objects</title>
+    <script >
+        function book(subject,author){
+         this.subject=subject;
+        this.author=author;
+        }
+    </script>
+   <body>
+       <script>
+        var bookmy=new book("ANGEL","PYTHON");
+        document.write("bookname is:"+bookmy.subject+"<br>");
+        document.write("book author:"+bookmy.author+"<br>");
+       </script>
+   </body>
+</html>

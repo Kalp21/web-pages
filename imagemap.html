@@ -1,0 +1,31 @@
+<html>
+    <title></title>
+    <head>
+        <script type="text/javascript">
+        function showtutorial(name)
+        {
+            document.myform.stage.value=name
+        }
+
+        </script>
+    </head>
+    <body>
+    <form name="myform">
+    <input type="text" name="stage" size="20" />
+    </form>
+    <img src="../javascript_tutorial/js_practise/htmlfile/bulboff.gif" alt="html map" border-size="0" usemap="#tutor">
+    <map name ="tutor">
+        <area shape="poly" coords="22,0,113,29,98,72,52,38,27" style="border: 2px;border-color: black;background-color: black;display: grid;" target="_self" onmouseover="showtutorial('html')" onmouseout="showtutorial('')" />
+        <area shape="rect" coords="22,83,126,125"
+        
+        target="_self"
+        onmouseover="showtutorial('perl')"
+        onmouseout="showtutorial('')" />
+        <area shape="circle" coords="73,168,32"
+        
+        target="_self"
+        onmouseover="showtutorial('php')"
+        onmouseout="showtutorial('')" />
+    </map>
+    </body>
+</html>

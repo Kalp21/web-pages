@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <script>
+        function myfunc(){
+            var a=100;
+            try 
+            {alert("value of variable:"+a);
+            }
+           catch(e)
+           {
+               alert("error:"+e.description);
+           } 
+           finally
+           {
+               alert("finally block always will be executed");
+           }
+        }
+    </script>
+    </head>
+    <body>
+<form>
+    <input type="button" value="click me" onclick="myfunc();" /> 
+</form>
+    </body>
+</html>

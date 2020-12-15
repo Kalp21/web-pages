@@ -1,0 +1,26 @@
+<html>
+    
+        <script type="text/javascript">
+        function myfunc(){
+            var a=0;
+            var b=100;
+            try{
+                if(b===0){
+                    throw("divide by zero");
+                }
+                else{
+                    var c=a/b;
+                }
+            }
+            catch(e){
+                alert("error"+e);
+            }
+        }
+        </script>
+    
+    <body>
+        <form>
+            <input type="button" value="click me" onclick="myfunc();" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        
+        
+        <script>
+            var linebreak="<br/>"
+            //var age=15;
+            //if (age >= 18)
+            //{
+              //  document.write("voter");
+            //}
+            //else
+            //{
+              //  document.write("not a voter");
+            //}
+        //document.write("s");
+        //document.write(linebreak);
+        //document.write("s");
+        var abc = 1;
+        switch(abc)
+        {
+            case 1: document.write("good job <br />");
+            break;
+            case 2: document.write(" job <br />");
+            break;
+            case 3: document.write("good1 job <br />");
+            break;
+            case 4: document.write("good 2job <br />");
+            break;
+            case 5: document.write("good j4ob <br />");
+            break;
+            case 6: document.write("good jo5b <br />");
+            break;
+            case 7: document.write("good job6 <br />");
+            break;
+            default: document.write("good job7 <br />");y
+            
+
+        }
+        
+        document.write("exiting switch block");
+        var count=0;
+        while(count<=10){
+            document.write("count-----------------"+count+"<br />");
+            count++;    
+        }
+        for(count=0;count<=10;count++)
+        {
+            document.write("++++++++++++++++++++++++++++count"+count+"<br />");
+        }
+        var aproperty;
+        for(aproperty in navigator){
+            document.write(aproperty+"<br />");
+        }
+        var i,j;
+        outerloop:
+        for(i=0;i<=10;i++){
+            document.write("outerloop" + i );
+            document.write(linebreak);
+        innerloop:
+        for(j=0;j<5;j++){
+            if(j>3)break;
+            if(j==2)break innerloop;
+            if(i==4)break outerloop;
+            document.write("innerloop:" + j );
+            document.write(linebreak);
+
+        }
+        }
+        function sayhello(){
+            alert("hello world!");
+        }
+    </script>
+    </head>
+    click the button and see result.
+    <form method="POST" action="practise.html" onsubmit="return validate()">
+    <input type="button" onclick="sayhello()" value="say hello" />
+<input type="submit" value="submit" />
+</form>
+    </body>
+    </html>
